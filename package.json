@@ -1,0 +1,8 @@
+{
+  "name": "polyglot-chat",
+  "private": true,
+  "dependencies": {},
+  "devDependencies": {
+    "webpack-dev-server": "^3.4.1"
+  }
+}
