@@ -1,0 +1,6 @@
+<%= simple_form_for [conversation, message], html: { class: 'form' } do |f| %>
+  <%= f.input :body, label: false, placeholder: 'Type something...' %>
+  <%= button_tag type: :submit do %>
+    <i class="far fa-paper-plane"></i>
+  <% end %>
+<% end %>

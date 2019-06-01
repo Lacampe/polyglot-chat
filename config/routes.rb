@@ -7,5 +7,7 @@ Rails.application.routes.draw do
   devise_for :users,
     path: '', path_names: { sign_up: 'signup', sign_in: 'login', sign_out: 'logout' }
 
-  resources :conversations, only: [:show]
+  resources :conversations, only: [:show] do
+    resources :messages, only: [:create]
+  end
 end

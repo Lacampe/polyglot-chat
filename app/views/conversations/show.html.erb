@@ -1,1 +1,5 @@
-<h1><%= @conversation.id %></h1>
+<div class="conversation">
+  <div class="info"></div>
+  <div class="messages"></div>
+  <%= render 'conversations/form', conversation: @conversation, message: @message %>
+</div>
