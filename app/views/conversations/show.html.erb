@@ -1,5 +1,5 @@
 <div class="conversation">
   <div class="info"></div>
-  <div class="messages"></div>
+  <%= render 'conversations/messages', messages: @messages %>
   <%= render 'conversations/form', conversation: @conversation, message: @message %>
 </div>

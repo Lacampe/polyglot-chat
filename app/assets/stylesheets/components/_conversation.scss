@@ -4,13 +4,27 @@
     height: 15vh;
   }
   .messages {
-    height: 70vh
+    height: 70vh; width: 85%;
+    margin: auto;
+    display: flex; flex-direction: column;
+    overflow: scroll;
+    .bubble {
+      background-color: $light-purple;
+      align-self: flex-start;
+      border-radius: 5px 5px 5px 0;
+      padding: 15px; margin: 15px;
+    }
+    .user {
+      background-color: orange;
+      align-self: flex-end;
+      border-radius: 5px 5px 0 5px;
+    }
   }
   .form {
     height: 15vh;
     display: flex; justify-content: center; align-items: center;
     .message_body {
-      width: 80%; height: 75px;
+      height: 75px; width: 80%;
       textarea {
         width: 100%; height: 100%;
         background-color: $light-purple; color: white;
@@ -21,10 +35,11 @@
       }
     }
     button {
-      width: 5%; height: 75px;
+      height: 75px; width: 5%;
       display: flex; align-items: center;
       background-color: $light-purple;
       border: none; border-radius: 0 5px 5px 0;
+      &:focus { outline: none; }
       i { font-size: 22px; color: orange; }
     }
   }

@@ -1,0 +1,7 @@
+<div class="messages">
+  <% messages.each do |message| %>
+    <div class="bubble <%= message.sender == current_user ? 'user' : '' %>">
+      <%= message.body %>
+    </div>
+  <% end %>
+</div>
