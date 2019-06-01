@@ -1,0 +1,4 @@
+.sidebar {
+  @extend .col-md-4; @extend .col-lg-3;
+  background-color: $light-purple;
+}
