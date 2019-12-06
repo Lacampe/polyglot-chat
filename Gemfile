@@ -8,7 +8,7 @@ gem 'bootsnap', '>= 1.1.0', require: false
 gem 'coffee-rails', '~> 4.2'
 gem 'devise', '~> 4.6', '>= 4.6.2'
 gem 'pg', '>= 0.18', '< 2.0'
-gem 'puma', '~> 3.11'
+gem 'puma', '~> 3.12'
 gem 'rails', '~> 5.2.3'
 gem 'sass-rails', '~> 5.0'
 gem 'sidekiq', '~> 5.2', '>= 5.2.7'
